@@ -1,0 +1,153 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.App header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding: 5px 0;
+}
+
+.App header h1 {
+  width: calc(100% - 50px);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.App header img {
+  width: 50px;
+}
+
+.App section {
+  background: #eeeeee;
+  padding: 0 0 30px 0;
+}
+
+.App button {
+  height: 25px;
+  border: 1px solid #222222;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.field {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.field label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+
+.field input {
+  width: 100%;
+  height: 25px;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #222222;
+}
+
+.productItem div {
+  margin: 5px 0;
+}
+
+.productItem input {
+  width: 100%;
+  height: 25px;
+}
+
+.productItem label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+
+.productItem span[aria-label="add"],
+.productItem span[aria-label="remove"] {
+  cursor: pointer;
+}
+
+.productItem .productItemText {
+  display: flex;
+  flex-direction: column;
+}
+
+.productItem .productItemText textarea {
+  resize: none;
+  height: 35px;
+}
+
+.productItem .productItemNumbers {
+  display: flex;
+  flex-direction: row;
+}
+
+.productItem .productItemNumbers div {
+  display: flex;
+  flex-direction: column;
+}
+
+.productItem .productItemNumbers div:nth-child(1) {
+  width: 40%;
+  padding-right: 2.5px;
+}
+
+.productItem .productItemNumbers div:nth-child(2) {
+  width: 60%;
+  padding-left: 2.5px;
+}
+
+.productItem .productItemNumbers input {
+  width: 100%;
+}
+
+.productItem .productItemBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.productItem .productItemBottom span[aria-label="add"] {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.productItem span[aria-label="add"],
+.productItem span[aria-label="remove"] {
+  cursor: pointer;
+}
+
+.productItem .productItemBottom textarea {
+  resize: none;
+  height: 40px;
+}
+
+.productDrawer > span {
+  margin: 15px 0 0 0;
+  width: 100%;
+  display: block;
+  border: 1px solid #222222;
+  text-align: center;
+}
